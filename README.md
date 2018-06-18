@@ -74,13 +74,10 @@ To install this library, just clone this Git Repo using this command :
 
     git clone https://github.com/kevinchapron/Python-FeatureExtractor.git
 
-Then you'll just have to import
-
-
 ## Usage
 
 To run `example.py`, we use the dataset of activities created by the [LIARA Laboratory](https://github.com/LIARALab).
-To run the example, please clone [this repo](https://github.com/LIARALab/Datasets) using this command :
+To run the example, please also clone [this repo](https://github.com/LIARALab/Datasets) using this command :
 
     git clone https://github.com/LIARALab/Datasets.git
 
