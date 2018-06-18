@@ -1,4 +1,4 @@
-# Feature Extractor
+# Python FeatureExtractor
 
 [![Languages](https://img.shields.io/badge/languages-En-green.svg)]()
 [![Licence Apache2](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
@@ -45,19 +45,19 @@ from FeatureExtractor import FeatureExtractor
 Extractor = FeatureExtractor()
 
 print(Extractor.FeatureManagement.GetAll(return_type=ReturnType.BIN))
->>> 11 1111 1111 1111 1111
+>>> 0b111111111111111111
 
 Extractor.FeatureManagement.Remove(Feature.DC_COMPONENT_TOTAL)
 Extractor.FeatureManagement.Remove(Feature.ENERGY_TOTAL)
 Extractor.FeatureManagement.Remove(Feature.ENTROPY_TOTAL)
 
 print(Extractor.FeatureManagement.GetAll(return_type=ReturnType.BIN))
->>> 01 0101 1111 1111 1111
+>>> 0b010101111111111111
 
 Extractor.FeatureManagement.Add(Feature.ENTROPY_TOTAL)
 
 print(Extractor.FeatureManagement.GetAll(return_type=ReturnType.BIN))
->>> 11 0101 1111 1111 1111
+>>> 0b110101111111111111
 ```
 
 Is is good to notice that 3 features come from the frequential domain, needing FFT Data (increase of computation number).
